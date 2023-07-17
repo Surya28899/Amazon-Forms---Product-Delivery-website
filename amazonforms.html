@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Amazon Forms - Product Delivery</title>
+  <style>
+    /* CSS Styles for the website */
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #f0c14b;
+      color: #111;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Amazon Forms - Product Delivery</h1>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="Your email" required>
+
+      <label for="address">Delivery Address</label>
+      <input type="text" id="address" name="address" placeholder="Your address" required>
+
+      <label for="product">Product</label>
+      <select id="product" name="product" required>
+        <option value="">Select a product</option>
+        <option value="product1">Ground nuts</option>
+        <option value="product2">fresh Ground nut oil</option>
+        <option value="product3">fresh ground nut</option>
+      </select>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
